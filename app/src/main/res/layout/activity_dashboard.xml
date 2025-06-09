@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewDashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:padding="24dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Hola Corredor! 🏃‍♂️"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#3D43B4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+    android:layout_marginBottom="24dp" />
+
+<TextView
+    android:id="@+id/tvProgresoMeta"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Progreso de la meta"
+    android:textSize="18sp"
+    android:textColor="#3D43B4"
+    android:textStyle="bold"
+android:layout_marginBottom="8dp" />
+
+<ProgressBar
+    android:id="@+id/progressMeta"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:progress="0"
+    android:max="100"
+    android:layout_marginBottom="24dp"
+    android:progressTint="#3D43B4"
+android:backgroundTint="#383737" />
+
+<Button
+    android:id="@+id/btnRegistrarEntrenamiento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Registrar Entrenamiento"
+    android:textColor="#FFFFFF"
+android:backgroundTint="#3D43B4"
+android:layout_marginBottom="16dp" />
+
+<Button
+    android:id="@+id/btnFrasesMotivadoras"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Frases Motivadoras"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#3D43B4"
+    android:layout_marginBottom="16dp" />
+
+<Button
+    android:id="@+id/btnHistorial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Historial"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#3D43B4"
+    android:layout_marginBottom="16dp" />
+
+<Button
+    android:id="@+id/btnMetas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Metas"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#3D43B4" />
+
+</LinearLayout>
+
+    </ScrollView>

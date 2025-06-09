@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMeta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Establece tu meta de entrenamiento!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:textColor="#3D43B4"
+        />
+
+    <TextView
+        android:id="@+id/tvKmMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kilómetros:"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#3D43B4"
+        />
+
+    <EditText
+        android:id="@+id/etKmMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Ejemplo: 10.5"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="24dp"
+        android:textColor="#3D43B4"/>
+
+    <TextView
+        android:id="@+id/tvTipoMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de entrenamiento:"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#3D43B4"
+        />
+
+    <Spinner
+        android:id="@+id/spTipoMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginBottom="24dp"
+        android:spinnerMode="dropdown"
+        />
+
+    <Button
+        android:id="@+id/btnGuardarMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Meta"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3D43B4" />
+
+    <Button
+        android:id="@+id/btnRevisarMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Revisar Meta Vigente"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#646AE0" />
+
+    <Button
+        android:id="@+id/btnEliminarMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Meta"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F60000" />
+
+</LinearLayout>

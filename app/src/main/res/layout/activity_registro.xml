@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFF"
+        >
+
+        <!-- título -->
+        <TextView
+            android:text="📝 Registrar Entrenamiento"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3D43B4"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- fecha -->
+        <TextView
+            android:text="📅 Fecha del entrenamiento:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:text="Selecciona la fecha en que realizaste tu entrenamiento"
+            android:textSize="16sp"
+            android:background="@drawable/editext_franja"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6D6B6B"
+            />
+
+        <Button
+            android:id="@+id/btnSeleccionarFecha"
+            android:text="📆 Cambiar Fecha"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3D43B4"
+            android:textColor="#FFFF"
+            />
+
+        <!-- distancia -->
+        <TextView
+            android:text="📏 Distancia recorrida:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/etDistancia"
+            android:hint="Ingresa la distancia en kilómetros, ej: 5.5"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:padding="20dp"
+            android:background="@drawable/editext_franja"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+
+        <!-- tiempo -->
+        <TextView
+            android:text="⏱️ Duración del entrenamiento:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+
+        <EditText
+            android:id="@+id/etTiempo"
+            android:hint="Ingresa el tiempo en minutos, ej: 30"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:padding="20dp"
+            android:background="@drawable/editext_franja"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6D6B6B"
+            />
+
+        <!-- entrenamiento -->
+        <TextView
+            android:text="🏃‍♂️ Tipo de entrenamiento:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            />
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/editext_franja"
+            android:padding="30dp" />
+
+        <!-- ayuda tipo de entrenamiento -->
+        <TextView
+            android:text="Selecciona si fue trote, caminata, carrera, etc."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- botones -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#3D43B4"
+            android:text="💾 Guardar Entrenamiento"
+            android:textColor="#ffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7071E4"
+            android:text="⬅️ Volver"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF">
+
+    <!-- título -->
+    <TextView
+        android:text="📋 Historial de Entrenamientos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#3D43B4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- estadisticas -->
+    <TextView
+        android:id="@+id/tvEstadisticas"
+        android:text="📊 Cargando estadísticas..."
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:background= "@drawable/editext_franja"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- lista de entrenamientos -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:divider="#3D43B4"
+        android:dividerHeight="2dp" />
+
+    <!-- boton de limpiar historial -->
+    <Button
+        android:id="@+id/btnLimpiarHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#3D43B4"
+        android:text="🗑️ Limpiar Historial"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- boton de volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint= "#6C72D1"
+        android:text="⬅️ Volver al Dashboard"
+        android:textColor="#FFFF"
+        android:textSize="22sp" />
+
+</LinearLayout>

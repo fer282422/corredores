@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#2F44A0"
+    android:padding="16dp"
+    android:layout_margin="4dp"
+    android:elevation="2dp">
+    <!-- primera fila-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:text="01/01/2025"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTipo"
+            android:text="Trote suave"
+            android:textSize="14sp"
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!-- segunda fila-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvDistancia"
+            android:text="5.0 km"
+            android:textSize="14sp"
+            android:textColor="#4CAF50"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTiempo"
+            android:text="30 min"
+            android:textSize="14sp"
+            android:textColor="#2196F3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvRitmo"
+            android:text="6.00 min/km"
+            android:textSize="14sp"
+            android:textColor="#FF5722"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
